@@ -9,7 +9,6 @@ Release:	%{release}
 Source0:	%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		Monitoring
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 Requires:	openssh-server telnet expect
 BuildArch:	noarch
 

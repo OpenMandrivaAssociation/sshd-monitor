@@ -1,11 +1,10 @@
 %define	name	sshd-monitor
 %define	version	0.3
-%define	release	%mkrel 2
 
 Summary:	A simple monitor for sshd
 Name:		%{name}
 Version:	%{version}
-Release:	%{release}
+Release:	%mkrel 3
 Source0:	%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		Monitoring

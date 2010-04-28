@@ -4,13 +4,15 @@
 Summary:	A simple monitor for sshd
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 6
+Release:	%mkrel 7
 Source0:	%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		Monitoring
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
-Requires:	openssh-server telnet expect
+Requires:	openssh-server
+Requires:	telnet-client
+Requires:	expect
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 A very basic sshd monitor written in expect.

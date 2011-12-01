@@ -23,13 +23,13 @@ A very basic sshd monitor written in expect.
 %build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-install expect-sshd -D $RPM_BUILD_ROOT%{_datadir}/%{name}/expect-sshd
-install sshd-restarter -D $RPM_BUILD_ROOT%{_datadir}/%{name}/sshd-restarter
-install -m 644 cron.entry -D $RPM_BUILD_ROOT%{_sysconfdir}/cron.d/%{name}
+rm -rf %{buildroot}
+install expect-sshd -D %{buildroot}%{_datadir}/%{name}/expect-sshd
+install sshd-restarter -D %{buildroot}%{_datadir}/%{name}/sshd-restarter
+install -m 644 cron.entry -D %{buildroot}%{_sysconfdir}/cron.d/%{name}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)

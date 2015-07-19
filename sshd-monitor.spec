@@ -4,7 +4,7 @@
 Summary:	A simple monitor for sshd
 Name:		%{name}
 Version:	%{version}
-Release:	16
+Release:	17
 Source0:	%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		Monitoring
